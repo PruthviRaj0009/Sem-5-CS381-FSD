@@ -3,10 +3,11 @@ h2 {
     margin: auto;
 }
 
-body {
-    background-color: rgb(229, 180, 125)
+#profile {
+    width: 100px;
+    height: 100px;
+    align-items: left;
 }
-
 nav {
     text-decoration: none;
     display: flex;
@@ -32,6 +33,11 @@ nav a:hover {
     background-color: white;
     color: black;
 }
+
+body {
+    background-color: rgb(229, 180, 125)
+}
+
 
 
 /* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
