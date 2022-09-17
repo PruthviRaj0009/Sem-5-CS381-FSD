@@ -1,0 +1,68 @@
+h2 {
+    text-align: center;
+    margin: auto;
+}
+
+body {
+    background-color: rgb(229, 180, 125)
+}
+
+nav {
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+nav a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    text-decoration: none;
+    color: white;
+    position: relative;
+}
+
+nav a:hover {
+    background-color: white;
+    color: black;
+}
+
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-width: 700px) {
+    nav {
+        display: none;
+    }
+}
+
+footer {
+    position: absolute;
+    background-color: white;
+    color: black;
+    text-align: center;
+    width: 99%;
+    bottom: 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-gap: 4px;
+    padding: 4px;
+}
+
+#grid-container div {
+    text-align: center;
+    padding: 30px;
+}
+
+#box-1 {
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
