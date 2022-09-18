@@ -5,59 +5,153 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="p2.css">
-    <title>My Profile</title>
+    <title>20CS068 Practical 2</title>
+
 </head>
-<h2>My Profile</h2>
 
 <body>
-    <nav>
-        <a href="#">Home</a>
-        <a href="#">About Us</a>
-        <a href="#">Contact Us</a>
-        <a href="#">Clients</a>
-    </nav>
+    <!-- bootstrap navbar  -->
+    <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand" href="#">My Profile</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarCollapse"
+                aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
 
-    <body>
-        <div id="grid-container">
-            <div id="box-1">
-                <a href="#">About</a><br>
-                <a href="#">Services</a><br>
-                <a href="#">Clients</a><br>
-                <a href="#">Contact</a><br>
+                <ul class="navbar-nav mr-auto">
+
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home
+                            <span class="sr-only"></span>
+                        </a>
+                    </li>
+
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact me</a>
+                    </li>
             </div>
-            <div id="box-2">
-                <img id="profile" src="./profile-icon.jpg"/>
-                <p>
-                    Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi cupiditate, cum, numquam ullam modi
-                    molestiae eum ad
-                    sapiente possimus ipsam eaque eligendi eos, tenetur voluptas fuga optio iste? Consequuntur nemo,
-                    voluptatem eos
-                    quaerat, consectetur necessitatibus explicabo perspiciatis praesentium suscipit sapiente ex.
-                    Perspiciatis, quod
-                    culpa! Dolores illo eius minus assumenda itaque.
-                </p>
-                <p>
-                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Cum, excepturi saepe dolorum accusantium
-                    adipisci iste
-                    vel, consequatur, iure necessitatibus neque distinctio nemo reprehenderit laudantium perferendis
-                    obcaecati atque
-                    harum corporis non ut! Laboriosam quaerat nisi dolorem atque, repellendus, iure voluptatibus nostrum
-                    consequatur
-                    saepe provident ut temporibus distinctio aliquam fuga facere dolores possimus ducimus accusantium
-                    molestias
-                    recusandae at beatae cum? Perspiciatis inventore minus, harum fugit at laborum numquam totam
-                    obcaecati aliquid illum
-                    tempore dicta quos consequatur enim accusamus alias sequi. In minus rerum voluptate sapiente
-                    inventore eius a
-                    repudiandae perspiciatis blanditiis dolorem quidem neque excepturi quod est, explicabo quia fuga
-                    architecto qui!
-                </p>
+        </div>
+    </nav>
+    <br><br><br>
+    <!-- sidebar -->
+    <div class="sidenav">
+        <!-- links  -->
+        <a href="#">My Skills</a>
+        <a href="#">Achievements</a>
+        <a href="#">Projects</a>
+        <a href="#">Tools known</a>
+    </div>
+    <!-- main content div -->
+    <div class="mainContent">
+        <h2 class="shadow-none p-3 mb-5 bg-light rounded">General Info</h2>
+        <!-- profile image -->
+        <img id="profile" src="./profile-icon.jpg"
+            class="border" alt="" srcset="">
+        <!-- adding description -->
+        <p>Name : Pruthvi Raj</p>
+        <p>Email: praj75629@gmail.com</p>
+        <p>Contact: 9999999999</p>
+        <hr>
+        <h2 class="shadow-none p-3 mb-5 bg-light rounded">Education</h2>
+        <p>Btech in CSE. Institute: CHARUSAT.</p>
+        <p>12th Science : Kokilaben Dhirubhai Ambani Vidhiyamandir</p>
+        <hr>
+        <h2 class="shadow-none p-3 mb-5 bg-light rounded">Projects</h2>
+        <p>Facial recognination System Attendence system: In this project I made facial recognation system which marks students attendence to a attendence sheets </p>
+        <p>College Gym website : It was website by which CSE students can register for Gym. </p>
+        <p>Find Me Internship : It is a website where CHARUSAT student can find companies which provide internship</p>
+
+        <hr>
+        <h2 class="shadow-none p-3 mb-5 bg-light rounded">Languages Known</h2>
+        <!-- links -->
+        <ol>
+            <li>C</li><br>
+            <li>C++</li><br>
+            <li>Python</li>
+        </ol>
+    </div>
+
+
+    <!-- Footer -->
+    <footer class="text-center text-lg-start bg-light text-muted">
+        <!-- Section: Social media -->
+        <section class="d-flex justify-content-center justify-content-lg-between p-4 border-bottom">
+        </section>
+
+
+        <!-- Section: Links  -->
+        <section class="main">
+            <div class="container text-center text-md-start mt-5">
+                <!-- Grid row -->
+                <div class="row mt-3">
+                    <!-- Grid column -->
+                    <div class="col-md-3 col-lg-4 col-xl-3 mx-auto mb-4">
+                        <!-- Content -->
+
+                        <p>
+                            I'm Pruthvi Raj a student of CSE.
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+                    <!-- Grid column -->
+                    <div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">
+                            Languages known
+                        </h6>
+                        <p>
+                            <a href="#!" class="text-reset">Angular</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">React</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Vue</a>
+                        </p>
+                        <p>
+                            <a href="#!" class="text-reset">Laravel</a>
+                        </p>
+                    </div>
+                    <!-- Grid column -->
+
+
+
+
+                    <!-- Grid column -->
+                    <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mb-md-0 mb-4">
+                        <!-- Links -->
+                        <h6 class="text-uppercase fw-bold mb-4">Contact</h6>
+                        <p><i class="fas fa-home me-3"></i> Anand</p>
+                        <p>
+                            <i class="fas fa-envelope me-3"></i>
+                            20cs068@charusat.edu.in
+                        </p>
+                        <p><i class="fas fa-phone me-3"></i> +999999999</p>
+
+                    </div>
+                    <!-- Grid column -->
+                </div>
+                <!-- Grid row -->
             </div>
-    </body>
-    <footer>&#169; 20CS068 Pruthvi Raj</footer>
+        </section>
+        <!-- Section: Links  -->
+
+        <!-- Copyright -->
+        <div class="text-center p-4" style="background-color: rgba(0, 0, 0, 0.05);">
+            © 20CS068 Pruthvi Raj
+        </div>
+        <!-- Copyright -->
+    </footer>
+
+</body>
 
 </html>
