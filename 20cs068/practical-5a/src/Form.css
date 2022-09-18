@@ -30,8 +30,9 @@
 }
 
 .form-img {
-  width: 65%;
-  height: 50%;
+  width: 85%;
+  height: 90%;
+  border-radius: 10px;
   position: absolute;
   top: 50%;
   left: 50%;

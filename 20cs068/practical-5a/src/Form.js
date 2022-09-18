@@ -16,7 +16,7 @@ const Form = () => {
 				<div className="form-content-left">
 					<img
 						className="form-img"
-						src="img/login.png"
+						src="./shuttle.png"
 						alt="shuttle"
 					/>
 				</div>
