@@ -9,7 +9,7 @@ function App() {
 			<div className="todo-app">
 				<TodoList />
 			</div>
-			<Footer note="Copyrights Reserved &copy; Jekeel Shah (20CS080)" />
+			<Footer note="Copyrights Reserved &copy; Pruthvi Raj (20CS068)" />
 		</>
   );
 }
